@@ -18,17 +18,17 @@
   </head>
   <body>
     <header class="header-wrapper">
-      <div class="container">
+      <div class="container flex-container">
         <nav class="nav">
-          <svg width="10" height="10">
-            <use href=""></use>
+          <svg width="40" height="36">
+            <use href="./images/index/logo.svg#logo"></use>
           </svg>
           <a href="./index.html" class="logo">Product</a>
-          <ul>
-            <li><a href="./index.html" class="nav-link">Product</a></li>
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link current">Product</a></li>
             <li><a href="./pricing.html" class="nav-link">Pricing</a></li>
             <li><a href="./customers.html" class="nav-link">Customers</a></li>
-            <li><a href="">Resources</a></li>
+            <li><a href="" class="nav-link">Resources</a></li>
           </ul>
         </nav>
         <ul class="header-bttn-list">
@@ -47,17 +47,25 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-wrap">
-            <h1>Work at the speed of thought</h1>
-            <p>
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-txt">
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
-            <ul>
-              <li><button type="button">Get started</button></li>
-              <li><button type="button">Watch the Video</button></li>
+            <ul class="hero-bttn-list">
+              <li>
+                <button type="button" class="hero-bttn start-bttn">
+                  Get started
+                </button>
+              </li>
+              <li>
+                <button type="button" class="hero-bttn watch-bttn">
+                  Watch the Video
+                </button>
+              </li>
             </ul>
           </div>
-          <svg width="600px" height="555px">
+          <svg width="610px" height="555px">
             <use href="./images/index/hero-img.svg#hero-img"></use>
           </svg>
         </div>
