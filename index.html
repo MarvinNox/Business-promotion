@@ -4,39 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <svg width="10" height="10">
-          <use href=""></use>
-        </svg>
-        <a href="" class="logo">Product</a>
-        <ul>
-          <li><a href="">Product</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Customers</a></li>
-          <li><a href="">Resources</a></li>
+    <header class="header-wrapper">
+      <div class="container">
+        <nav class="nav">
+          <svg width="10" height="10">
+            <use href=""></use>
+          </svg>
+          <a href="./index.html" class="logo">Product</a>
+          <ul>
+            <li><a href="./index.html" class="nav-link">Product</a></li>
+            <li><a href="./pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="./customers.html" class="nav-link">Customers</a></li>
+            <li><a href="">Resources</a></li>
+          </ul>
+        </nav>
+        <ul class="header-bttn-list">
+          <li>
+            <button type="button" class="header-bttn sign-in-bttn">
+              Sign In</button
+            ><button type="button" class="header-bttn sign-up-bttn">
+              Sign Up
+            </button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <button type="button">Sign In</button
-          ><button type="button">Sign Up</button>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Hero Section -->
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <button type="button">Get started</button>
-        <a href="">Watch the Video</a>
-        <img src="" alt="" />
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-wrap">
+            <h1>Work at the speed of thought</h1>
+            <p>
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul>
+              <li><button type="button">Get started</button></li>
+              <li><button type="button">Watch the Video</button></li>
+            </ul>
+          </div>
+          <svg width="600px" height="555px">
+            <use href="./images/index/hero-img.svg#hero-img"></use>
+          </svg>
+        </div>
       </section>
       <!-- Benefits section -->
       <section>
@@ -63,9 +87,14 @@
       </section>
       <!-- Management section -->
       <section>
-        <h2><span>Effortless Validation for</span> Management</h2>
+        <h2>Effortless Validation for <span>Management</span></h2>
+        <p>
+          The Myspace page defines the individual, his or her characteristics,
+          traits, personal choices and the overall personality of the person.
+        </p>
         <ul>
           <li>
+            <h3>Accessory makers</h3>
             <p>
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
@@ -73,15 +102,7 @@
             </p>
           </li>
           <li>
-            <strong>Accessory makers</strong>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-          </li>
-          <li>
-            <strong>Alterationists</strong>
+            <h3>Alterationists</h3>
             <p>
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
@@ -293,7 +314,7 @@
     </main>
     <!-- Footer -->
     <footer>
-      <div>
+      <div class="container">
         <svg width="10" height="10"><use></use></svg>
         <a href="">Product</a>
         <ul>
@@ -333,12 +354,8 @@
         </ul>
       </div>
       <div>
-        <strong>knowing you're always on the best energy deal. </strong
-        ><textarea
-          name=""
-          id=""
-          placeholder="Enter your phone number"
-        ></textarea
+        <p>knowing you're always on the best energy deal.</p>
+        <textarea name="" id="" placeholder="Enter your phone number"></textarea
         ><button type="button">Sign up Now</button>
       </div>
       <p>Made With Love By Figmaland All Right Reserved</p>
