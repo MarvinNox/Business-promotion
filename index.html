@@ -14,6 +14,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -45,7 +52,7 @@
     <main>
       <!-- Hero Section -->
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container flex-container">
           <div class="hero-wrap">
             <h1 class="hero-title">Work at the speed of thought</h1>
             <p class="hero-txt">
@@ -60,6 +67,7 @@
               </li>
               <li>
                 <button type="button" class="hero-bttn watch-bttn">
+                  <img src="./images/index/Triangle.svg" alt="triang" />
                   Watch the Video
                 </button>
               </li>
@@ -70,78 +78,127 @@
           </svg>
         </div>
       </section>
-      <!-- Benefits section -->
-      <section>
-        <h2>Product was Built Specifically for You</h2>
-        <ul>
-          <li>
-            <h3>First click tests</h3>
-            <p>While most people enjoy casino gambling,</p>
-          </li>
-          <li>
-            <h3>Design surveys</h3>
-            <p>Sports betting, lottery and bingo playing for the fun</p>
-          </li>
-          <li>
-            <h3>Preference tests</h3>
-            <p>The Myspace page defines the individual.</p>
-          </li>
-          <li>
-            <h3>Five second tests</h3>
-            <p>Personal choices and the overall personality of the person.</p>
-          </li>
-        </ul>
-        <button type="button">SIGN UP NOW</button>
+      <!-- Feature section -->
+      <section class="feature">
+        <div class="container">
+          <h2 class="secondary-title-part">
+            Product was Built Specifically for You
+          </h2>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <div class="feature-icon-box">
+                <svg class="icon" width="11px" height="18px">
+                  <use href="./images/index/feature-icon.svg#icon-1"></use>
+                </svg>
+              </div>
+              <h3 class="feature-item-title">First click tests</h3>
+              <p>While most people enjoy casino gambling,</p>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon-box">
+                <svg class="icon" width="18px" height="18px">
+                  <use href="./images/index/feature-icon.svg#icon-2"></use>
+                </svg>
+              </div>
+              <h3 class="feature-item-title">Design surveys</h3>
+              <p>Sports betting, lottery and bingo playing for the fun</p>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon-box">
+                <svg class="icon" width="16px" height="18px">
+                  <use href="./images/index/feature-icon.svg#icon-3"></use>
+                </svg>
+              </div>
+              <h3 class="feature-item-title">Preference tests</h3>
+              <p>The Myspace page defines the individual.</p>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon-box">
+                <svg class="icon" width="14px" height="18px">
+                  <use href="./images/index/feature-icon.svg#icon-4"></use>
+                </svg>
+              </div>
+              <h3 class="feature-item-title">Five second tests</h3>
+              <p class="feature-item-txt">
+                Personal choices and the overall personality of the person.
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="feature-bttn">SIGN UP NOW</button>
+        </div>
       </section>
       <!-- Management section -->
-      <section>
-        <h2>Effortless Validation for <span>Management</span></h2>
-        <p>
-          The Myspace page defines the individual, his or her characteristics,
-          traits, personal choices and the overall personality of the person.
-        </p>
-        <ul>
-          <li>
-            <h3>Accessory makers</h3>
+      <section class="management">
+        <div class="container flex-container">
+          <div class="management-box">
+            <h2 class="secondary-title">
+              Effortless Validation for
+              <span class="secondary-title-part">Management</span>
+            </h2>
             <p>
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
               personality of the person.
             </p>
-          </li>
-          <li>
-            <h3>Alterationists</h3>
-            <p>
-              The Myspace page defines the individual, his or her
-              characteristics, traits, personal choices and the overall
-              personality of the person.
-            </p>
-          </li>
-        </ul>
-        <img src="" alt="" />
+            <ul class="management-list">
+              <li>
+                <h3 class="management-item-title">Accessory makers</h3>
+                <p>
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <li>
+                <h3 class="management-item-title">Alterationists</h3>
+                <p>
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+            </ul>
+          </div>
+          <svg width="540px" height="500px">
+            <use href="./images/index/management-img.svg#mgmnt-img"></use>
+          </svg>
+        </div>
       </section>
       <!-- Customer Support -->
-      <section>
-        <img src="" alt="" />
-        <h2><span>Easier decision making for</span>Customer Support</h2>
-        <p>
-          The Myspace page defines the individual, his or her characteristics,
-          traits, personal choices and the overall personality of the person.
-        </p>
-        <ul>
-          <li>
-            <p>Never worry about overpaying for your energy again.</p>
-          </li>
-          <li>
+      <section class="support">
+        <div class="container flex-container">
+          <svg width="540px" height="500px">
+            <use href="./images/index/support-img.svg#img"></use>
+          </svg>
+          <div class="support-box">
+            <h2 class="secondary-title">
+              Easier decision making for
+              <span class="secondary-title-part">Customer Support</span>
+            </h2>
             <p>
-              We will only switch you to energy companies that we trust and will
-              treat you right
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
             </p>
-          </li>
-          <li>
-            <p>We track the markets daily and know where the savings are.</p>
-          </li>
-        </ul>
+            <ul class="support-list">
+              <li class="support-list-item">
+                <div class="support-icon-box"></div>
+                <p>Never worry about overpaying for your energy again.</p>
+              </li>
+              <li class="support-list-item">
+                <div class="support-icon-box"></div>
+                <p>
+                  We will only switch you to energy companies that we trust and
+                  will treat you right
+                </p>
+              </li>
+              <li class="support-list-item">
+                <div class="support-icon-box"></div>
+                <p>
+                  We track the markets daily and know where the savings are.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <!-- Collaborative Section -->
       <section>
