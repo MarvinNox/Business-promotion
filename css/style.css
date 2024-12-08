@@ -38,10 +38,6 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
-.flex-container {
-  display: flex;
-  align-items: center;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -148,6 +144,7 @@ a {
   border-radius: 4px;
   min-width: 178px;
   height: 53px;
+  letter-spacing: 0.04em;
 }
 .start-bttn {
   background: #02897a;
@@ -222,12 +219,14 @@ a {
   border: none;
   min-width: 175px;
   height: 53px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 .icon {
   fill: #ffffff;
 }
 /* Management */
-.management {
+.wrapper-section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -244,11 +243,10 @@ a {
   font-weight: 700;
   font-size: 32px;
 }
-.management .secondary-title {
+.management-box .secondary-title {
   width: 224px;
 }
-
-.management-list {
+.sections-list {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -260,23 +258,20 @@ a {
 .management-item-txt {
 }
 /* Support Customer */
-.support .secondary-title {
-  width: 304px;
-}
 .support-box {
   width: 450px;
 }
-.support-list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  gap: 25px;
+.support-box .secondary-title {
+  width: 304px;
 }
 .support-list-item {
   display: flex;
   align-items: center;
 }
 .support-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 30px;
   border: 2.92px solid #fff;
   border-radius: 14px;
@@ -286,4 +281,208 @@ a {
 }
 .support-list-item:nth-child(2) .support-icon-box {
   background: #f03e3d;
+}
+.support-list-item:last-child .support-icon-box {
+  background: #4d8dff;
+}
+/* Collaboration */
+.collab-box {
+  width: 486px;
+}
+.collab-box .secondary-title {
+  width: 226px;
+}
+/* Stuff */
+.staff-wrap {
+  padding: 100px 0 50px;
+}
+.staff-wrap .secondary-title-part {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.staff-txt {
+  font-weight: 500;
+  text-align: center;
+  width: 542px;
+  margin: 0 auto 40px;
+}
+.staff-item-txt {
+  font-weight: 500;
+  line-height: 1.625;
+  text-align: center;
+  color: #22343d;
+}
+.staff-container {
+  max-width: 956px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.staff-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 31px;
+  column-gap: 100px;
+  margin-bottom: 50px;
+}
+.staff-list-item {
+  display: flex;
+  align-items: center;
+  min-width: calc((100% - 100px) / 2);
+}
+.staff-item-box {
+  padding: 14px 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  border-radius: 50px;
+}
+.staff-avatar-box {
+  border-radius: 100%;
+  border: 2px solid #ff0909;
+  width: 98px;
+  height: 98px;
+  margin: 0 20px 0 0;
+  object-fit: contain;
+  overflow: hidden;
+}
+.staff-list-item:nth-child(2) .staff-avatar-box {
+  border: 2px solid #740a76;
+  margin: 0 0 0 20px;
+}
+.staff-list-item:nth-child(3) .staff-avatar-box {
+  border: 2px solid #02897a;
+  margin: 0 0 0 20px;
+}
+.staff-list-item:last-child .staff-avatar-box {
+  border: 2px solid #035b81;
+  margin: 0 20px 0 0;
+}
+.staff-bttn {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  background: #02897a;
+  border: none;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+/* News Feed */
+.feed-title {
+  font-size: 34px;
+  color: #22343d;
+  margin-bottom: 10px;
+}
+
+.feed-txt {
+  font-weight: 500;
+  line-height: 1.625;
+  color: #22343d;
+  width: 465px;
+  margin-bottom: 40px;
+}
+.feed-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-item {
+  max-width: calc((100% - 2 * 30px) / 3);
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.feed-card-title {
+  max-width: 296px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+}
+.feed-item:hover .feed-card-title {
+  color: #02897a;
+}
+.feed-card {
+  padding: 24px 24px 40px 24px;
+}
+.feed-txt-by {
+  line-height: 1.75;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.feed-txt-by-part {
+  font-weight: 700;
+}
+/* pricing */
+.price-list {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100% - 2 * 72px) / 3);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  padding: 32px 72px;
+}
+.price-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  margin-bottom: 8px;
+}
+.price-card-descr {
+  line-height: 2.5;
+  margin-bottom: 16px;
+}
+.price-number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.31579;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+}
+.price-dollar {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  color: #02897a;
+}
+.price-card-per {
+  line-height: 1.1875;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+}
+.price-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.price-card-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: 0.01em;
+  color: #22343d;
+}
+.price-bttn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  background: #02897a;
+  border-radius: 8px;
+  padding: 11px 19px;
 }
