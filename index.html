@@ -41,11 +41,12 @@
         <ul class="header-bttn-list">
           <li>
             <button type="button" class="header-bttn sign-in-bttn">
-              Sign In</button
-            ><button type="button" class="header-bttn sign-up-bttn">
-              Sign Up
+              Sign In
             </button>
           </li>
+          <button type="button" class="header-bttn sign-up-bttn">
+            Sign Up
+          </button>
         </ul>
       </div>
     </header>
@@ -494,16 +495,18 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="wrapper-section">
       <div class="container">
         <div class="footer-box">
-          <svg width="40" height="36">
-            <use href="./images/index/logo.svg#logo"></use>
-          </svg>
-          <a href="./index.html" class="logo">Product</a>
+          <div class="footer-logo-box">
+            <svg width="40" height="36">
+              <use href="./images/index/logo.svg#logo"></use>
+            </svg>
+            <a href="./index.html" class="logo">Product</a>
+          </div>
           <nav class="footer-nav">
             <h3 class="footer-title">Resource</h3>
-            <ul class="footer-list">
+            <ul>
               <li class="footer-item">About Us</li>
               <li class="footer-item">Blog</li>
               <li class="footer-item">Contacts</li>
@@ -512,7 +515,7 @@
           </nav>
           <div class="footer-legal">
             <h3 class="footer-title">Legal Stuff</h3>
-            <ul class="footer-list">
+            <ul>
               <li class="footer-item">Disclaimer</li>
               <li class="footer-item">Financing</li>
               <li class="footer-item">Privacy Policy</li>
@@ -537,7 +540,9 @@
           </div>
         </div>
 
-        <p>Made With Love By Figmaland All Right Reserved</p>
+        <p class="footer-right">
+          Made With Love By Figmaland All Right Reserved
+        </p>
       </div>
     </footer>
   </body>

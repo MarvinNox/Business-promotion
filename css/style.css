@@ -83,19 +83,13 @@ a {
 .header-bttn-list {
   align-items: center;
   display: flex;
-  /* thats bullshit doesnt works */
-  /* gap: 21px;  */
+  gap: 21px;
 }
 .header-bttn {
   border-radius: 4px;
   font-size: 16px;
   min-width: 105px;
   height: 42px;
-  /* needs to fix that shit in --- line 87 ----*/
-  margin-right: 21px;
-}
-.header-bttn:last-child {
-  margin-right: 0;
 }
 .sign-in-bttn {
   border: 1px solid #bcd0e5;
@@ -608,12 +602,24 @@ a {
   height: inherit;
 }
 /* Footer */
-.footer-nav {
+.footer-box .logo {
+  margin: 0;
 }
 .footer-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
+  padding-bottom: 10px;
+}
+.footer-logo-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: 146px;
+}
+.footer-nav {
+  margin-right: 129px;
+  min-width: 118px;
 }
 .footer-title {
   font-weight: 500;
@@ -621,12 +627,12 @@ a {
   line-height: 1.5;
   margin-bottom: 8px;
 }
-.footer-list {
-}
 .footer-item {
   line-height: 2.1875;
 }
 .footer-legal {
+  margin-right: 83px;
+  min-width: 131px;
 }
 .footer-subscribe {
   display: flex;
@@ -673,4 +679,8 @@ a {
   left: 13px;
   fill: #02897a;
   transform: translatey(-50%);
+}
+.footer-right {
+  text-align: center;
+  line-height: 1.875;
 }
