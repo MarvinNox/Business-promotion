@@ -22,6 +22,7 @@ img {
 }
 button {
   cursor: pointer;
+  border: none;
 }
 ul,
 ol {
@@ -102,7 +103,6 @@ a {
   background-color: transparent;
 }
 .sign-up-bttn {
-  border: none;
   max-width: 113px;
   background: #02897a;
   color: #fff;
@@ -151,12 +151,10 @@ a {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
-  border: none;
 }
 .watch-bttn {
   display: flex;
   align-items: center;
-  border: none;
   background: transparent;
   font-weight: 600;
   text-decoration: underline;
@@ -216,7 +214,6 @@ a {
   color: #fff;
   background: #02897a;
   border-radius: 4px;
-  border: none;
   min-width: 175px;
   height: 53px;
   font-weight: 700;
@@ -363,7 +360,6 @@ a {
   padding: 15px 30px;
   border-radius: 4px;
   background: #02897a;
-  border: none;
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
@@ -507,7 +503,6 @@ a {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
-  border: none;
   background: #02897a;
   border-radius: 8px;
   padding: 11px 19px;
@@ -531,11 +526,133 @@ a {
   width: calc((100% - 64px * 2) / 3);
   border: 1px solid #dedede;
   border-radius: 5px;
-  padding: 30px 35px;
+  padding: 28px 26px;
+
   background-color: #fff;
 }
 .feedback-card-txt {
   line-height: 1.75;
   letter-spacing: 0.01em;
   color: #737373;
+  margin-bottom: 16px;
+}
+.feedback-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.feedback-box-avatar {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #bdbdbd;
+  background-color: transparent;
+  object-fit: cover;
+  overflow: hidden;
+}
+.feedback-card-names {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
+.feedback-card-names-part {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #252b42;
+}
+.feedback-name-box {
+  display: flex;
+  flex-direction: column;
+}
+/* Promo */
+.promo-container {
+  max-width: 968px;
+  display: flex;
+  border-radius: 32px;
+  background: #02897a;
+  margin: 0 auto;
+  align-items: center;
+}
+.promo-box {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 49px; */
+  padding-left: 51px;
+  /* padding-bottom: 56px; */
+}
+.promo-title {
+  margin-top: 49px;
+  width: 510px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.514;
+  color: #fff;
+  margin-bottom: 46px;
+}
+.promo-bttn {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  color: #02897a;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 34px;
+  max-width: 150px;
+  margin-bottom: 56px;
+}
+.promo-img {
+  height: inherit;
+}
+/* Footer */
+.footer-nav {
+}
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.footer-list {
+}
+.footer-item {
+  line-height: 2.1875;
+}
+.footer-legal {
+}
+.footer-subscribe {
+}
+.footer-subscribe .footer-title {
+  width: 280px;
+  margin-bottom: 30px;
+}
+.footer-form {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  width: 325px;
+  height: 48px;
+  outline: none;
+  background-color: transparent;
+  padding: 10px 42px;
+}
+.footer-form::placeholder {
+  line-height: 1.75;
+  color: #02897a;
+}
+.footer-form-bttn {
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  background: #02897a;
+  /* min-width: 131px;
+  min-height: 39px; */
 }
