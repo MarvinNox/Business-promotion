@@ -629,10 +629,14 @@ a {
 .footer-legal {
 }
 .footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
 }
 .footer-subscribe .footer-title {
   width: 280px;
-  margin-bottom: 30px;
+  margin: 0;
 }
 .footer-form {
   border: 1px solid #bcd0e5;
@@ -642,17 +646,31 @@ a {
   outline: none;
   background-color: transparent;
   padding: 10px 42px;
+  line-height: 1.75;
+  color: #02897a;
 }
 .footer-form::placeholder {
   line-height: 1.75;
   color: #02897a;
 }
+.footer-form:hover,
+.footer-form:focus {
+  border: 1px solid #252b42;
+}
 .footer-form-bttn {
+  display: block;
   padding: 10px 15px;
   color: #fff;
   font-weight: 700;
   border-radius: 4px;
   background: #02897a;
-  /* min-width: 131px;
-  min-height: 39px; */
+  max-width: 131px;
+  max-height: 39px;
+}
+.footer-icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  fill: #02897a;
+  transform: translatey(-50%);
 }
