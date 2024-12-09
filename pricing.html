@@ -4,75 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <nav>
-        <svg width="10" height="10">
-          <use href=""></use>
-        </svg>
-        <a href="" class="logo">Product</a>
-        <ul>
-          <li><a href="./index">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="">Resources</a></li>
+      <div class="container flex-container">
+        <nav class="nav">
+          <svg width="40" height="36">
+            <use href="./images/index/logo.svg#logo"></use>
+          </svg>
+          <a href="./index.html" class="logo">Product</a>
+          <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link current">Product</a></li>
+            <li><a href="./pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="./customers.html" class="nav-link">Customers</a></li>
+            <li><a href="" class="nav-link">Resources</a></li>
+          </ul>
+        </nav>
+        <ul class="header-bttn-list">
+          <li>
+            <button type="button" class="header-bttn sign-in-bttn">
+              Sign In
+            </button>
+          </li>
+          <button type="button" class="header-bttn sign-up-bttn">
+            Sign Up
+          </button>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <button type="button">Sign In</button
-          ><button type="button">Sign Up</button>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <!-- hero table -->
-      <section>
-        <strong>Price</strong>
-        <h1>Let’s get some real work done here.</h1>
-        <p>
-          WProdict is your perfect solution for working. Get started now for
-          free
-        </p>
-        <ul>
-          <li>
-            <strong>Free</strong>
-            <p>Brief price description</p>
-            <span>Brief price description</span>
-            <p>Per / month</p>
-            <ul>
-              <li>Only 2 Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button>Order Now</button>
-          </li>
-          <li>
-            <strong>Standard</strong>
-            <p>Brief price description</p>
-            <span>Brief price description</span>
-            <p>Per / month</p>
-            <ul>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button>Order Now</button>
-          </li>
-          <li>
-            <strong>Premium</strong>
-            <p>Brief price description</p>
-            <span>Brief price description</span>
-            <p>Per / month</p>
-            <ul>
-              <li>10+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
-            </ul>
-            <button>Order Now</button>
-          </li>
-        </ul>
+      <!-- Price Table -->
+      <section class="wrapper-section">
+        <div class="container">
+          <h2 class="secondary-title-part price-center">Price Table</h2>
+          <p class="price-center">We offer competitive price</p>
+          <ul class="price-list">
+            <li class="price-item">
+              <strong class="price-card-title">Free</strong>
+
+              <p class="price-card-descr">Brief price description</p>
+              <div class="price-box">
+                <span class="price-value">0</span>
+                <div class="price-sub-box">
+                  <span class="price-currency">&dollar;</span>
+                  <p class="price-txt">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-card-list">
+                <li class="price-card-item">Only 2 Operators</li>
+                <li class="price-card-item">Notifications</li>
+                <li class="price-card-item">Landing Pages</li>
+              </ul>
+              <button type="button" class="price-bttn">Order Now</button>
+            </li>
+            <li class="price-item">
+              <strong class="price-card-title">Standard</strong>
+              <p class="price-card-descr">Brief price description</p>
+              <div class="price-box">
+                <span class="price-value">5</span>
+                <div class="price-sub-box">
+                  <span class="price-currency">&dollar;</span>
+                  <p class="price-txt">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-card-list">
+                <li class="price-card-item">5+ Operators</li>
+                <li class="price-card-item">Notifications</li>
+                <li class="price-card-item">Landing Pages</li>
+              </ul>
+              <button type="button" class="price-bttn">Order Now</button>
+            </li>
+            <li class="price-item">
+              <strong class="price-card-title">Premium</strong>
+              <p class="price-card-descr">Brief price description</p>
+              <div class="price-box">
+                <span class="price-value">10</span>
+                <div class="price-sub-box">
+                  <span class="price-currency">&dollar;</span>
+                  <p class="price-txt">Per / month</p>
+                </div>
+              </div>
+              <ul class="price-card-list">
+                <li class="price-card-item">10+ Operators</li>
+                <li class="price-card-item">Notifications</li>
+                <li class="price-card-item">Landing Pages</li>
+              </ul>
+              <button type="button" class="price-bttn">Order Now</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- ENTERPRISE -->
       <section>
@@ -149,63 +181,101 @@
           </li>
         </ul>
       </section>
-      <!-- Get This -->
-      <section>
-        <h2>Join 100 Compannies who boost their business with Product</h2>
-        <button>Get This</button><img src="" alt="" />
+      <!-- Promo -->
+      <section class="wrapper-section">
+        <div class="promo-container">
+          <div class="promo-box">
+            <h2 class="promo-title">
+              Join 100 Compannies who boost their business with Product
+            </h2>
+            <button type="button" class="promo-bttn">Get This</button>
+          </div>
+          <img
+            src="./images/index/promo.png"
+            alt="Promo grafics"
+            width="351px"
+            height="331px"
+          />
+        </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer>
-      <div>
-        <svg width="10" height="10"><use></use></svg>
-        <a href="">Product</a>
-        <ul>
-          <li>
-            <svg width="10" height="10">
-              <use></use>
-            </svg>
-          </li>
-          <li>
-            <svg width="10" height="10">
-              <use></use>
-            </svg>
-          </li>
-          <li>
-            <svg width="10" height="10">
-              <use></use>
-            </svg>
-          </li>
-        </ul>
+    <footer class="wrapper-section">
+      <div class="container">
+        <div class="footer-box">
+          <div class="footer-logo_social-box">
+            <div class="footer-logo-box">
+              <svg width="40" height="36">
+                <use href="./images/index/logo.svg#logo"></use>
+              </svg>
+              <a href="./index.html" class="logo">Product</a>
+            </div>
+            <!--#region Social bttns box -->
+            <ul class="footer-social-list">
+              <li class="footer-social-icon-box">
+                <a href="#" class="footer-social-icon">
+                  <svg width="24px" height="24px">
+                    <use href="./images/index/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-icon-box">
+                <a href="#" class="footer-social-icon">
+                  <svg width="24px" height="24px">
+                    <use href="./images/index/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-icon-box">
+                <a href="#" class="footer-social-icon">
+                  <svg width="24px" height="24px">
+                    <use href="./images/index/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!-- #endregion -->
+          </div>
+          <nav class="footer-nav">
+            <h3 class="footer-title">Resource</h3>
+            <ul>
+              <li class="footer-item"><a href="#">About Us</a></li>
+              <li class="footer-item"><a href="#">Blog</a></li>
+              <li class="footer-item"><a href="#">Contacts</a></li>
+              <li class="footer-item"><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <div class="footer-legal">
+            <h3 class="footer-title">Legal Stuff</h3>
+            <ul>
+              <li class="footer-item"><a href="#">Disclaimer</a></li>
+              <li class="footer-item"><a href="#">Financing</a></li>
+              <li class="footer-item"><a href="#">Privacy Policy</a></li>
+              <li class="footer-item"><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-subscribe">
+            <h2 class="footer-title">
+              knowing you're always on the best energy deal.
+            </h2>
+            <div style="position: relative">
+              <input
+                class="footer-form"
+                name="user-email"
+                id="user-email"
+                placeholder="Enter your phone number"
+              /><svg class="footer-form-icon" width="18px" height="28px">
+                <use href="./images/index/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <button type="button" class="footer-form-bttn">Sign up Now</button>
+          </div>
+        </div>
+
+        <p class="footer-right">
+          Made With Love By Figmaland All Right Reserved
+        </p>
       </div>
-      <nav>
-        <h3>Resource</h3>
-        <ul>
-          <li>About Us</li>
-          <li>Blog</li>
-          <li>Contacts</li>
-          <li>FAQ</li>
-        </ul>
-      </nav>
-      <div>
-        <h3>Legal Stuff</h3>
-        <ul>
-          <li>Disclaimer</li>
-          <li>Financing</li>
-          <li>Privacy Policy</li>
-          <li>Terms of Service</li>
-        </ul>
-      </div>
-      <div>
-        <strong>knowing you're always on the best energy deal. </strong
-        ><textarea
-          name=""
-          id=""
-          placeholder="Enter your phone number"
-        ></textarea
-        ><button type="button">Sign up Now</button>
-      </div>
-      <p>Made With Love By Figmaland All Right Reserved</p>
     </footer>
   </body>
 </html>
