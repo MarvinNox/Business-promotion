@@ -441,10 +441,11 @@ a {
   border-radius: 8px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
-  padding: 32px 72px;
+  padding: 32px 0;
   transition: box-shadow 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 .price-item:hover {
+  color: #fff;
   background-color: #02897a;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15), 0 8px 12px rgba(0, 0, 0, 0.1);
 }
@@ -452,18 +453,14 @@ a {
   color: #02897a;
   background-color: #ffffff;
 }
-/* fix thith bullshit */
-.price-item:hover .price-card-title,
-.price-item:hover .price-card-descr,
-.price-item:hover .price-card-item,
-.price-item:hover .price-card-item,
-.price-item:hover .price-currency,
-.price-item:hover .price-value {
+.price-item:hover .price-value,
+.price-item:hover .price-currency {
   color: #fff;
 }
-.price-item:hover .price-card-per {
+.price-item:hover .price-txt {
   color: #e0e0e0;
 }
+
 .price-card-title {
   font-weight: 700;
   font-size: 24px;
@@ -766,6 +763,7 @@ a {
 }
 /* ENTERPRISE */
 .wrapper-enterprise {
+  margin-top: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -801,6 +799,10 @@ a {
   align-items: center;
 }
 /* PRODUCTS */
+.wrapper-products {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 .products-container {
   max-width: 1170px;
   margin: 0 auto;
@@ -811,6 +813,10 @@ a {
 }
 .products-container .enterprise-secondary-title {
   margin-bottom: 56px;
+}
+.products-sub-container {
+  display: flex;
+  gap: 60px;
 }
 .products-box {
   width: 543px;
