@@ -24,6 +24,8 @@ button {
   cursor: pointer;
   border: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  border-radius: 4px;
 }
 button:hover {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15), 0 8px 12px rgba(0, 0, 0, 0.1);
@@ -88,14 +90,11 @@ a {
 .nav-link {
   display: block;
   line-height: 1.75;
-  color: #22343d;
   padding: 26px 0;
   transition: font-weight 50ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
-.nav-link:focus {
-  font-weight: 600;
-}
+.nav-link:focus,
 .current {
   font-weight: 600;
 }
@@ -105,10 +104,7 @@ a {
   gap: 21px;
 }
 .header-bttn {
-  border-radius: 4px;
-  font-size: 16px;
-  min-width: 105px;
-  height: 42px;
+  padding: 10px 24px;
 }
 .sign-in-bttn {
   border: 1px solid #bcd0e5;
@@ -116,7 +112,6 @@ a {
   background-color: transparent;
 }
 .sign-up-bttn {
-  max-width: 113px;
   background: #02897a;
   color: #fff;
 }
@@ -139,14 +134,12 @@ a {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
-  color: #22343d;
   margin-bottom: 18px;
 }
 .hero-txt {
   font-size: 18px;
   margin-bottom: 45px;
   line-height: 1.55556;
-  color: #22343d;
 }
 .hero-bttn-list {
   display: flex;
@@ -154,25 +147,22 @@ a {
   gap: 30px;
 }
 .hero-bttn {
-  border-radius: 4px;
-  min-width: 178px;
-  height: 53px;
+  padding: 15px 42px;
   letter-spacing: 0.04em;
 }
 .start-bttn {
   background: #02897a;
   font-weight: 700;
-  font-size: 16px;
   color: #fff;
 }
 .watch-bttn {
   display: flex;
   align-items: center;
   background: transparent;
-  font-weight: 600;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #02897a;
+  padding: 15px 0px;
 }
 .watch-bttn img {
   margin-right: 9px;
@@ -216,21 +206,17 @@ a {
 }
 .feature-item-title {
   padding-bottom: 13px;
-  font-weight: 600;
   font-size: 22px;
-  color: #22343d;
 }
 .feature-bttn {
   display: block;
   margin: 0 auto;
-  line-height: 1.625;
   color: #fff;
   background: #02897a;
-  border-radius: 4px;
-  min-width: 175px;
-  height: 53px;
+  padding: 15px 34px;
   font-weight: 700;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 .icon {
   fill: #ffffff;
@@ -242,7 +228,6 @@ a {
 .secondary-title {
   font-weight: 600;
   font-size: 16px;
-  color: #22343d;
   margin-bottom: 25px;
 }
 .secondary-title-part {
@@ -309,9 +294,7 @@ a {
 }
 .staff-item-txt {
   font-weight: 500;
-  line-height: 1.625;
   text-align: center;
-  color: #22343d;
 }
 .staff-container {
   max-width: 956px;
@@ -364,7 +347,6 @@ a {
   font-weight: 700;
   color: #fff;
   padding: 15px 30px;
-  border-radius: 4px;
   background: #02897a;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -373,15 +355,11 @@ a {
 .feed-title {
   text-align: center;
   font-size: 34px;
-  color: #22343d;
   margin-bottom: 10px;
 }
-
 .feed-txt {
   text-align: center;
   font-weight: 500;
-  line-height: 1.625;
-  color: #22343d;
   width: 465px;
   margin: 0 auto 40px;
 }
@@ -519,12 +497,11 @@ a {
 }
 .price-bttn {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
   font-size: 18px;
   color: #fff;
   background: #02897a;
   border-radius: 8px;
-  padding: 11px 19px;
+  padding: 12px 18px;
 }
 /* feedback */
 .feedback-title {
@@ -572,7 +549,6 @@ a {
 }
 .feedback-card-names {
   font-weight: 600;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: #02897a;
@@ -612,8 +588,6 @@ a {
   margin-bottom: 46px;
 }
 .promo-bttn {
-  display: block;
-  font-weight: 600;
   font-size: 20px;
   color: #02897a;
   background: #fff;
@@ -633,7 +607,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: start;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .footer-logo_social-box {
   display: flex;
@@ -693,14 +667,11 @@ a {
   border: 1px solid #02897a;
 }
 .footer-form-bttn {
-  display: block;
   padding: 10px 15px;
   color: #fff;
   font-weight: 700;
-  border-radius: 4px;
   background: #02897a;
   max-width: 131px;
-  max-height: 39px;
 }
 .footer-form-icon {
   position: absolute;
@@ -742,8 +713,6 @@ a {
 /* #region Pricing page */
 /* pricing table */
 .pricing-title-main {
-  font-weight: 600;
-  font-size: 24px;
   margin-bottom: 32px;
   text-align: center;
   text-transform: uppercase;
@@ -759,9 +728,8 @@ a {
 }
 .pricing-table-txt {
   font-weight: 500;
-  font-size: 16px;
   text-align: center;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 /* ENTERPRISE */
 .wrapper-enterprise {
@@ -770,8 +738,6 @@ a {
   padding-bottom: 50px;
 }
 .enterprise-title-main {
-  font-weight: 600;
-  font-size: 24px;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
@@ -787,7 +753,6 @@ a {
 }
 .enterprise-bttn {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
   font-size: 18px;
   color: #fff;
   border-radius: 8px;
@@ -929,7 +894,6 @@ details[open] summary:before {
   line-height: 1.375;
   letter-spacing: 0em;
   text-align: center;
-  color: #22343d;
   margin-bottom: 16px;
 }
 .products_feature-item:nth-child(2) .feature-icon-box {
@@ -1014,7 +978,6 @@ details[open] summary:before {
 }
 .offers-list-end-title {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.75;
   color: #000;
   margin-top: 12px;
