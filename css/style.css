@@ -69,7 +69,7 @@ a {
 .wrapper-hero {
   padding: 50px 0;
 }
-/* header */
+/* #region header */
 .nav {
   display: flex;
   align-items: center;
@@ -115,7 +115,8 @@ a {
   background: #02897a;
   color: #fff;
 }
-/* Hero */
+/* #endregion header */
+/* #region Hero */
 .hero {
   padding-top: 25px;
   padding-bottom: 50px;
@@ -167,7 +168,8 @@ a {
 .watch-bttn img {
   margin-right: 9px;
 }
-/* Features */
+/* #endregion hero */
+/* #region Features */
 .feature {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -221,7 +223,8 @@ a {
 .icon {
   fill: #ffffff;
 }
-/* Management */
+/* #endregion Features */
+/* #region Management */
 .management-box {
   width: 486px;
 }
@@ -246,7 +249,8 @@ a {
 .management-item-title {
   margin-bottom: 12px;
 }
-/* Support Customer */
+/* #endregion region Management */
+/* #region Support Customer */
 .support-box {
   width: 450px;
 }
@@ -274,14 +278,16 @@ a {
 .support-list-item:last-child .support-icon-box {
   background: #4d8dff;
 }
-/* Collaboration */
+/* #endregion Support Customer */
+/* #region Collaboration */
 .collab-box {
   width: 486px;
 }
 .collab-box .secondary-title {
   width: 226px;
 }
-/* Stuff */
+/* #endregion Collaboration */
+/* #region Stuff */
 .wrapper-faq .secondary-title-part {
   text-align: center;
   margin-bottom: 25px;
@@ -351,7 +357,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-/* News Feed */
+/* #endregion Stuff */
+/* #region News Feed */
 .feed-title {
   text-align: center;
   font-size: 34px;
@@ -399,7 +406,8 @@ a {
 .feed-txt-by-part {
   font-weight: 700;
 }
-/* pricing */
+/* #endregion News Feed */
+/* #region Pricing */
 .price-center {
   text-align: center;
   margin-bottom: 10px;
@@ -503,7 +511,8 @@ a {
   border-radius: 8px;
   padding: 12px 18px;
 }
-/* feedback */
+/* #endregion Pricing */
+/* #region Feedback */
 .feedback-title {
   text-align: center;
   margin-bottom: 10px;
@@ -564,7 +573,8 @@ a {
   display: flex;
   flex-direction: column;
 }
-/* Promo */
+/* #endregion Feedback */
+/* #region Promo */
 .promo-container {
   max-width: 968px;
   display: flex;
@@ -599,7 +609,8 @@ a {
 .promo-img {
   height: inherit;
 }
-/* Footer */
+/* #endregion Promo */
+/* #region Footer */
 .footer-box .logo {
   margin: 0;
 }
@@ -710,8 +721,8 @@ a {
     stroke 50ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* #endregion Footer */
 /* #region Pricing page */
-/* pricing table */
 .pricing-title-main {
   margin-bottom: 32px;
   text-align: center;
@@ -731,7 +742,7 @@ a {
   text-align: center;
   margin-bottom: 50px;
 }
-/* ENTERPRISE */
+/* #region ENTERPRISE */
 .wrapper-enterprise {
   margin-top: 100px;
   padding-top: 50px;
@@ -765,7 +776,8 @@ a {
   flex-direction: column;
   align-items: center;
 }
-/* PRODUCTS */
+/* #endregion ENTERPRISE */
+/* #region PRODUCTS */
 .wrapper-products {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -802,7 +814,8 @@ a {
 .products-item-txt {
   line-height: 1.75;
 }
-/* FAQ */
+/* #endregion PRODUCTS */
+/* #region FAQ */
 .wrapper-faq {
   padding: 100px 0 50px;
 }
@@ -835,6 +848,7 @@ details summary:before {
 details[open] summary:before {
   content: url("../images/pricing/minus_circle.png");
 }
+/* #endregion FAQ */
 /* #endregion Pricing page */
 /* #region Customers Page */
 /* Clients section */
