@@ -1307,8 +1307,8 @@ details[open] summary:before {
 .res_form_bttn {
   border-radius: 35px;
   padding: 18px 38px;
-  width: 145px;
-  height: 52px;
+  min-width: 145px;
+  min-height: 52px;
   background: #02897a;
   font-weight: 700;
   font-size: 16px;
