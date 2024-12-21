@@ -1016,7 +1016,7 @@ details[open] summary:before {
   color: #fff;
 }
 .res_hero-wrapp {
-  padding: 50px 0;
+  padding: 100px 0 50px;
 }
 .greeny {
   color: #02897a;
@@ -1183,10 +1183,122 @@ details[open] summary:before {
 .strong-txt {
   font-weight: 800;
 }
-.res_end-wrapper {
+/* Contact Us */
+.res_contacts-wrapper {
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
-.res_end-container {
+.res_contacts-wrapper .res_sec-title {
+  line-height: 1.67647;
+  letter-spacing: 0.01em;
+  margin-bottom: 17px;
+}
+.res_contacts-container {
   max-width: 871px;
   padding-right: 16px;
   padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.res_contacts-txt {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.res_contacts-map-box {
+  margin-top: 56px;
+  margin-bottom: 50px;
+  border-radius: 16px;
+  width: 871px;
+  height: 323px;
+  background-image: url("../images/resources/map.jpg");
+}
+.res_form-box {
+  border: 1px solid #464646;
+  border-radius: 20px;
+  padding: 52px 50px;
+  width: 868px;
+  height: 670px;
+  background: #22343d;
+}
+
+.res_form-title {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1.375;
+  letter-spacing: 0em;
+  margin-bottom: 45px;
+}
+.res_form-input {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.06667;
+  letter-spacing: 0.01em;
+  color: #22343d;
+  padding: 19px 20px;
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 39px;
+  width: 768px;
+  height: 54px;
+  margin-bottom: 45px;
+  outline: none;
+}
+.res_form-input:focus {
+  color: #02897a;
+  border: 1px solid #02897a;
+}
+.res_form-input::placeholder {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.06667;
+  letter-spacing: 0.01em;
+  color: #22343d;
+}
+.res_form-input:focus::placeholder {
+  color: #02897a;
+}
+.res_form-message {
+  display: block;
+  border: 1px solid #e8e8e8;
+  padding: 23px 20px;
+  width: 768px;
+  height: 193px;
+  background: #f5f5f5;
+  resize: none;
+  outline: none;
+  scrollbar-width: thin;
+  margin-bottom: 45px;
+}
+.res_form-message::placeholder {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.06667;
+  letter-spacing: 0.01em;
+  color: #22343d;
+}
+.res_form-message:focus {
+  color: #02897a;
+  border: 1px solid #02897a;
+}
+.res_form-message:focus::placeholder {
+  color: #02897a;
+}
+.res_form_bttn {
+  border-radius: 35px;
+  padding: 18px 38px;
+  width: 145px;
+  height: 52px;
+  background: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #fff;
 }
