@@ -702,11 +702,13 @@ a {
 .footer-social-icon-box {
   width: 40px;
   height: 40px;
+  transition: transform 250ms ease-out;
 }
-.footer-social-icon-box:hover .footer-social-icon {
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15), 0 8px 12px rgba(0, 0, 0, 0.1);
-  background-color: #02897a;
-  stroke: #ffffff;
+.footer-social-icon-box:hover {
+  transform: translateY(-4px);
+}
+.footer-social-icon-box:active {
+  transform: translateY(-2px);
 }
 .footer-social-icon {
   border-radius: 50%;
@@ -720,6 +722,11 @@ a {
   transition: box-shadow 550ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke 50ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-icon-box:hover .footer-social-icon {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15), 0 8px 12px rgba(0, 0, 0, 0.1);
+  background-color: #02897a;
+  stroke: #ffffff;
 }
 /* #endregion Footer */
 /* #region Pricing page */
@@ -1143,6 +1150,9 @@ details[open] summary:before {
   border: 1px solid #dedede;
   border-radius: 8px;
 }
+.res_sec-item:hover {
+  box-shadow: 10px 10px 34px 5px rgba(255, 255, 255, 0.25);
+}
 .res_sec-item img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -1226,7 +1236,6 @@ details[open] summary:before {
   height: 670px;
   background: #22343d;
 }
-
 .res_form-title {
   display: flex;
   justify-content: center;
@@ -1301,4 +1310,16 @@ details[open] summary:before {
   line-height: 1;
   letter-spacing: 0.01em;
   color: #fff;
+}
+.res_contacts-wrapper .footer-social-icon-box {
+  width: 50px;
+  height: 50px;
+}
+.res_contacts-wrapper .footer-social-list {
+  gap: 22px;
+}
+.res-body .footer-form {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  background: #fff;
 }
